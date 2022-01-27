@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.check {
+	width: 48px;
+	height: 48px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background: rgba(0,0,0,.2);
+	cursor: pointer;
+	transition: .2s;
+	box-shadow: 2px 2px 5px rgba(0,0,0,.4);
+}
+
+.fas {
+	font-size: 24px;
+	opacity: 0;
+	color: white;
+	transition: .2s;
+}
+
+.active {
+	background: #bc252a;
+}
+
+.active .fas {
+	opacity: 1;
+}
