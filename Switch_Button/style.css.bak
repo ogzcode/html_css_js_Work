@@ -1,0 +1,31 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #f1f1f1;
+}
+
+.box {
+	width: 70px;
+	height: 40px;
+	position: relative;
+	border-radius: 20px;
+	box-shadow: 2px 2px 3px rgba(0,0,0,.15),
+				inset 0px 1px 4px rgba(0,0,0,.3);
+}
+
+.switch {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background: #0095ff;
+	top: 5px;
+	left: 5px;
+	border-radius: 50%;
+	transition: .2s;
+}
+
+.active .switch {
+	transform: translateX(30px);
+}
