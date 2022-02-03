@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.container {
+	width: 200px;
+	height: 200px;
+	position: relative;
+}
+
+.loader {
+	width: calc(100%);
+	height: calc(100%);
+	border-radius: 50%;
+	border: 8px solid white;
+	border-top: 8px solid #2295e9;
+	animation: rotate 5s linear infinite;
+	position: absolute;
+}
+
+@keyframes rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+
+
+
+
+
+
+
+
