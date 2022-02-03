@@ -1,0 +1,32 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.square {
+	width: 40px;
+	height: 40px;
+	border-radius: 10px;
+	background-color: #4b9cdb;
+	animation: load 1.5s cubic-bezier(.17,.37,.43,.67) infinite;
+}
+
+@keyframes load {
+	0% {
+		transform: translate(0,0) rotate(0deg);
+	}
+	50% {
+		transform: translate(120px,0) rotate(360deg);
+	}
+	100% {
+		transform: translate(0,0) rotate(0deg);
+	}
+}
