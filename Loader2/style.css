@@ -1,0 +1,85 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background: #001845;
+}
+
+.loader {
+	width: 200px;
+	height: 200px;
+	background: none;
+	position: relative;
+}
+
+.bar {
+	width: 20px;
+	height: 20px;
+	background: #001845;
+	position: absolute;
+	display: inline-block;
+	transform: translate(-50%, -50%);
+	animation: load 1s infinite;
+	animation-direction: alternate;
+	border-radius: 50%;
+	animation-timing-function: ease-out;
+}
+
+.bar-1 {
+	top: 0;
+	left: 50%;
+}
+
+.bar-2 {
+	top: 50%;
+	left: 100%;
+}
+
+.bar-3 {
+	top: 100%;
+	left: 50%;
+}
+
+.bar-4 {
+	top: 50%;
+	left: 0;
+}
+
+/*	
+hover effect
+.loader:hover .bar {
+	top: 50%;
+	left: 50%;
+	transition-duration: .5s;
+}
+*/	
+	
+	
+@keyframes load {
+	to {
+		top: 50%;
+		left: 50%;
+		background: #80ffdb;
+	}
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
