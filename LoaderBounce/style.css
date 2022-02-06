@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.ball {
+    width: 40px;
+    height: 40px;
+    background-color: crimson;
+    border-radius: 50%;
+    animation: bounce .5s cubic-bezier(0.19, 0.57, 0.3, 0.98) infinite alternate;
+}
+
+.ball:nth-child(2) {
+    animation-delay: .1s;
+    opacity: .8;
+}
+.ball:nth-child(3) {
+    animation-delay: .2s;
+    opacity: .6;
+}
+.ball:nth-child(4) {
+    animation-delay: .3s;
+    opacity: .4;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100px);
+    }
+}
