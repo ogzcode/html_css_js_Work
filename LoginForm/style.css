@@ -1,0 +1,144 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-image: url(bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	
+}
+
+.form-class {
+	padding: 4rem 2rem;
+	background: white;
+	width: 30%;
+	border-radius: .5rem;
+	text-align: center;
+	box-shadow: 1px 1px 6px -2px rgb(0, 0, 0, 40%);
+}
+
+h1 {
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 3rem;
+	color: #484848;
+}
+
+.box {
+	margin-bottom: 2rem;
+	position: relative;
+}
+
+.inside-box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.inside-box .fas {
+	color: #484848;
+}
+
+input {
+	width: 100%;
+	font-size: 1rem;
+	padding: .5rem;
+	outline: none;
+	border-radius: .25rem;
+	border: 2px solid #bdbdbd;
+	letter-spacing: 1px;
+	color: #484848;
+}
+
+input:focus {
+	border-color: #f2796e;
+}
+
+label {
+	display: block;
+	font-size: 1rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: #666666;
+	text-align: left;
+	margin-bottom: .75rem;
+}
+
+.checkbox-container {
+	margin: 1rem 0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+/*checkbox*/
+.check {	
+	width: 24px;
+	height: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0,0,0,.2);
+	cursor: pointer;
+	transition: .2s;
+	border-radius: .25rem;
+}
+
+.checkbox-container p {
+	margin-left: .5rem;
+	color: #666666;
+	letter-spacing: 1px;
+}
+
+.fa-check {
+	font-size: 16px;
+	opacity: 0;
+	color: white;
+	transition: .2s;
+}
+
+.active {
+	background: #f2796e;
+}
+
+.active .fas {
+	opacity: 1;
+}
+/*checkbox*/
+
+button {
+	border: none;
+	border-radius: .25rem;
+	outline: none;
+	font-size: 1rem;
+	padding: .75rem 1.25rem;
+	background: #f2796e;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: white;
+	transition: .2s;
+	cursor: pointer;
+	margin-top: 1rem;
+}
+
+button:disabled {
+	background-color: rgba(0,0,0,.2);
+
+}
+
+
+@media screen and (max-width: 1200px){
+	.form-class {
+		width: 600px;
+	}
+}
