@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #924c99;
+}
+
+.container {
+    display: flex;
+}
+
+.box {
+    margin: 0 3rem;
+    text-align: center;
+    color: white
+}
+
+p {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+i {
+    margin-bottom: 1rem;
+}
+
+small {
+    font-size: 12px;
+}
