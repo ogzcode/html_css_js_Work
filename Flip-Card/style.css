@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 360px;
+    height: 360px;
+    background-color: #270a2f;
+    border-radius: 16px;
+    box-shadow: 4px 4px 6px rgba(0,0,0,.4);
+}
+
+img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.flip {
+    height: 85%;
+    width: 100%;
+    perspective: 1000px;
+    background-color: transparent;
+}
+
+.flip:hover .inner {
+    transform: rotateY(180deg);
+}
+
+
+.inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.back, .front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.front {
+    background-color: #270a2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.front__name {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.front__title {
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-color: #270a2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skill__text {
+    font-size: 18px;
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 6px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    padding: 16px;
+    margin-top: 16px;
+    border-radius: 8px;
+}
+
+li {
+    padding: 4px 12px;
+    border-radius: 4px;
+    background-color: white;
+    margin: 8px;
+    font-size: 12px;
+    cursor: pointer;
+    border: 1px solid white;
+    transition: .2s;
+}
+
+li:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.social {
+    height: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid white;
+}
+
+a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    width: 36px;
+    height: 36px;
+    transition: .2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+a:hover {
+    background-color: white;
+    color: #270a2f;
+}
