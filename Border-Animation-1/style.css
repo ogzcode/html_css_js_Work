@@ -1,0 +1,58 @@
+:root {
+    --borderColorRed: #e7646a;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.border {
+    position: relative;
+    cursor: pointer;
+    border: 1px solid var(--borderColorRed);
+    width: 160px;
+    height: 64px;
+    background-color: transparent;
+    font-size: 18px;
+    color: var(--borderColorRed);
+    text-transform: uppercase;
+}
+
+.border::before,
+.border::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    transition: .2s ease-in-out;
+}
+
+.border::before {
+    top: -5px;
+    left: -5px;
+    border-top: 1px solid var(--borderColorRed);
+    border-left: 1px solid var(--borderColorRed);
+}
+
+.border::after {
+    right: -5px;
+    bottom: -5px;
+    border-right: 1px solid var(--borderColorRed);
+    border-bottom: 1px solid var(--borderColorRed);
+}
+
+.border:hover::before,
+.border:hover::after {
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+}
