@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+button {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    outline: none;
+    border-radius: 10px;
+    z-index: 0;
+    background-color: transparent;
+    color: white;
+    overflow: hidden;
+    border: none;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    border-radius: 5px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    background-color: #000;
+    z-index: -1;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background-color: #1a232a;
+    top: -50%;
+    left: -50%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: conic-gradient(transparent 75%, #ff6a00, #ee0979);
+    animation: rotate 4s linear infinite;
+    z-index: -2;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(1turn);
+    }
+}
