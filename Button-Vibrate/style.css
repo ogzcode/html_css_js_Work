@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000a1b;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 16px 32px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #f82525;
+}
+
+button:hover {
+    animation: vibrate .1s ease-in-out;
+    animation-iteration-count: 3;
+}
+
+@keyframes vibrate {
+    0% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
