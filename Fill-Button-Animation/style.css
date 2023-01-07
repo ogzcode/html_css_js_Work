@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(50, 50, 50);
+}
+
+.btn {
+    padding: 20px 60px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    background-color: transparent;
+    color: aliceblue;
+    border: 2px solid aqua;
+    border-radius: .5rem;
+}
+
+.btn:hover {
+    transition: ease-in .7s;
+    box-shadow: inset 300px 0 0 0 rgb(85, 209, 182);
+    color: rgb(50, 50, 50);
+}
