@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #353535;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: 120px 120px;
+    grid-template-rows: 120px 120px;
+    gap: 12px;
+}
+
+.red {
+    background-color: #f45325;
+    border-top-left-radius: 8px;
+}
+
+.green {
+    background-color: #81bd08;
+    border-top-right-radius: 8px;
+}
+
+.blue {
+    background-color: #08a6f1;
+    border-bottom-left-radius: 8px;
+}
+
+.yellow {
+    background-color: #feb90a;
+    border-bottom-right-radius: 8px;
+}
